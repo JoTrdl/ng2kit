@@ -2,8 +2,8 @@
   "name": "Ng2Kit",
   "version": "1.0.0",
   "scripts": {
-    "app": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 8080",
-    "build": "NODE_ENV=production webpack --colors --progress --display-error-details -p --config webpack.production.config.js",
+    "app": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 8080 --config webpack.dev.config.js",
+    "build": "NODE_ENV=production webpack --colors --progress --display-error-details -p --config webpack.prod.config.js",
     "test": "node ./node_modules/karma/bin/karma start"
   },
   "devDependencies": {
